@@ -5,7 +5,7 @@ from requests import get
 class Offsets:
     try:
         offset = get("https://raw.githubusercontent.com/a2x/cs2-dumper/main/output/offsets.json").json()
-        client = get("https://raw.githubusercontent.com/a2x/cs2-dumper/main/output/client.dll.json").json()
+        client = get("https://raw.githubusercontent.com/a2x/cs2-dumper/main/output/client_dll.json").json()
 
         dwEntityList = offset["client.dll"]["dwEntityList"]
         dwViewMatrix = offset["client.dll"]["dwViewMatrix"]
